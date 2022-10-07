@@ -1,11 +1,11 @@
-# name: Snyk security check
-# on: [push]
-# jobs:
-#   security:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@main
-#       - name: Run Snyk checks
-#         uses: snyk/actions/node@master
-#         env:
-#           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+name: Snyk security check
+on: [push]
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Run Snyk checks
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
