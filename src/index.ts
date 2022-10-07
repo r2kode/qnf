@@ -6,3 +6,5 @@ export const sum = (a: number, b: number) => {
 };
 
 export const yay = () => console.log('YIPPEE-KI-YAY');
+
+export const nay = () => console.log("It' alive!!!");
