@@ -2,7 +2,7 @@
   "name": "qnf",
   "author": "r2k",
   "description": "Javascript Quirks'n'Functions",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -20,7 +20,16 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "semantic-release": "semantic-release"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "husky": {
     "hooks": {
@@ -47,9 +56,14 @@
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.1.0",
     "husky": "^8.0.1",
+    "semantic-release": "^19.0.5",
     "size-limit": "^8.1.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^3.9.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r2kode/qnf.git"
   }
 }
