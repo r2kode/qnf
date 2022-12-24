@@ -1,1 +1,1 @@
-export const removeDuplicates = (arr) => [...new Set(arr)];
+export const removeDuplicates = (arr: Iterable<unknown>) => [...new Set(arr)];
