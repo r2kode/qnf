@@ -1,5 +1,5 @@
 {
-  "name": "qnf",
+  "name": "@r2kode/qnf",
   "author": "r2k",
   "description": "Javascript Quirks'n'Functions",
   "version": "0.0.0-development",
@@ -11,7 +11,7 @@
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=16"
   },
   "scripts": {
     "start": "tsdx watch",
