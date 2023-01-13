@@ -1,3 +1,3 @@
 export function sayHelloOnAlpha() {
-  console.log('yay alpha!!!!');
+  console.log('yay alpha changes!!!!');
 }
