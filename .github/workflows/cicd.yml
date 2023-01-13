@@ -1,4 +1,4 @@
-name: CICD
+name: QnF jobs
 
 on:
   push:
@@ -37,18 +37,17 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: |
-          npm ci
-          npm run build
-  security:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: echo "TODO implement security check"
-  publish:
-    needs: security
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: echo "TODO implement publishing on npm"
+      - run: npm ci
+      - run: npm run build
+  # security:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - run: echo "TODO implement security check"
+  # publish:
+  #   needs: security
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - run: echo "TODO implement publishing on npm"
