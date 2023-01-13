@@ -6,9 +6,6 @@ on:
   pull_request:
     branches: ['main', 'alpha']
 
-env:
-  NODE_VER: 16
-
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -16,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: echo $NODE_VER
+          node-version: 16
         # run: npm install -g pnpm
       - name: Lint setup
         run: npm ci
