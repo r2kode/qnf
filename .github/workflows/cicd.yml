@@ -51,12 +51,12 @@ jobs:
           pnpm i
           pnpm build
 
-  security:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/chekout@v3
-      - name: Security setup
+  # security:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/chekout@v3
+  #     - name: Security setup
       # - run: echo "TODO: implement security check"
 
   publish:
@@ -65,4 +65,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Publish library
-      # - run: echo "TODO: implement publishing on npm"
+      - run: echo "TODO: implement publishing on npm"
