@@ -42,7 +42,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build setup
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: NODE_VER
 
