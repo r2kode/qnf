@@ -12,7 +12,7 @@ env:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    step:
+    steps:
       - name: Lint setup
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -25,7 +25,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    step:
+    steps:
       - name: Test setup
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -62,7 +62,7 @@ jobs:
   publish:
     needs: security
     runs-on: ubuntu-latest
-    step:
+    steps:
       - uses: actions/checkout@v3
       - name: Publish library
         run: echo 'TODO: implement publishing on npm'
