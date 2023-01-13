@@ -44,7 +44,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/chekout@v3
+      - uses: actions/checkout@v3
       - run: echo "TODO implement security check"
   publish:
     needs: security
