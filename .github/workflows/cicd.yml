@@ -14,14 +14,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Lint setup
-        uses: actions/checkout@v3
-        uses: actions/setup-node@v3
+        uses: |
+          actions/checkout@v3
+          actions/setup-node@v3
         with:
           node-version: NODE_VER
-        run: npm install -g pnpm
-        run: pnpm i
+        # run: npm install -g pnpm
+        run: npm ci
       - name: Lint start
-        run: pnpm lint
+        run: npm lint
   # test:
   #   runs-on: ubuntu-latest
   #   steps:
